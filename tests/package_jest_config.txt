@@ -1,0 +1,10 @@
+Agrega esto en tu package.json, reemplazando la sección "jest" actual:
+
+"jest": {
+  "testEnvironment": "node",
+  "transform": {},
+  "testMatch": ["**/tests/**/*.test.js"]
+}
+
+NOTA: Se eliminó "setupFilesAfterFramework" — ya no se necesita porque
+cada archivo de test maneja su propia conexión a través de dbHelper.js
